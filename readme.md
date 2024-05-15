@@ -39,6 +39,43 @@ JavaScript tiene la característica de ser un lenguaje débilmente tipado con ti
 ## String-Metodos
 Cuando se trata de JavaScript, un método es una función puesta en un objeto o una serie de instrucciones para completar una tarea única. por ejemplo: si desea saber la logitud de una cadena, eliminar espacios en blanco o reemplazar cierta parte de la cadena recurrimos a los metods propios de string disponibles length() trim() replace() respectivamente.
 
+```bash
+/*USO DE METODOS DE STRING */
+
+const fullName = 'jose diaz';
+//length()
+console.log(fullName.length); // devuelve la longitud de la cadena
+
+const company = "GeekFlare";
+
+//toUpperCase
+const upperCaseCompany = company.toUpperCase();
+console.log(upperCaseCompany); // DEvuelve la cadena escrita en mayusculas
+
+ //toLowerCase()
+const lowerCaseCompany = company.toLowerCase();
+console.log(lowerCaseCompany); // Devuelve la  cadena escrita en minusculas
+
+//slice()
+console.log(company.slice(4 , 7)); // Nos devuelve un segmento de cadena "Fla"
+console.log(company.slice(-9 , -5));   // Nos devuelve un segmento de cadena "Geek"
+
+//substring()
+console.log(company.substring(4, 6)); // devuelve una subcadena  "Fl"
+
+// reeplace()
+const statement = "Visit the site Google";
+console.log(statement.replace("Google", "GeekFlare"));
+
+//indexOf()
+console.log(company.indexOf("e"));// devuelve "1"
+console.log(company.indexOf("e", 4)); //devuelve "8"
+
+//split()
+const statement1 = "Visit, the, site, GeekFlare";
+console.log(statement1.split(" "));
+console.log(statement1.split(", "));
+```
 
 ## Numeros
 Esta teoria se usa representar y manipular valores numéricos cómo 37 o -9.25. El constructor "Number" contiene constantes y métodos para trabajar con números. Valores de otro tipo pueden ser convertidos a números usando la función Number().
